@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 9.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_DAILY_API_KEY": "your-daily-api-key-here (same as in .env file)",
+        "EXPO_PUBLIC_IP_ADDRESS": "your local machine on which server is running (same as in .env file)"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_DAILY_API_KEY": "your-daily-api-key-here (same as in .env file)",
+        "EXPO_PUBLIC_IP_ADDRESS": "your local machine on which server is running (same as in .env file)"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_DAILY_API_KEY": "your-daily-api-key-here (same as in .env file)",
+        "EXPO_PUBLIC_IP_ADDRESS": "your local machine on which server is running (same as in .env file)"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -1,0 +1,15 @@
+export const fields = {
+  name: 'name',
+  email: 'email',
+  password: 'password',
+  confirm_password: 'confirm_password',
+  country: 'country',
+  city: 'city',
+  current_password: 'current_password',
+  new_password: 'new_password',
+  confirm_new_password: 'confirm_new_password',
+  specialization: 'specialization',
+  title: 'title',
+  description: 'description',
+  bio: 'bio',
+} as const;
